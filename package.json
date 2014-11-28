@@ -1,0 +1,32 @@
+{
+  "name": "neocities-proxy",
+  "version": "0.0.1",
+  "description": "Neocities' proxy server for web pages",
+  "main": "./src/index.js",
+  "keywords": [
+    "neocities"
+  ],
+  "contributors": [
+    {
+      "name": "Kyle Drake",
+      "email": "kyle@kyledrake.net",
+      "url": "http://kyledrake.net/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neocities/neocities-proxy.git"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "coverage": "istanbul cover _mocha -- test/*.js",
+    "test": "npm run-script unit"
+  },
+  "dependencies": {
+    "spdy": "*",
+    "ejs": "*",
+    "optimist": "*",
+    "mime": "*",
+    "leveldown": "*"
+  }
+}
