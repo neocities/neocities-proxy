@@ -4,8 +4,11 @@ A start on a caching proxy server for Neocities, based on node-spdy and random o
 
 We were starting to push Nginx beyond it's capabilities, so this is starting to make more sense as an option. It's not done yet.
 
-`npm install`
-`sudo node ./src/index.js`
+```
+npm install
+sudo node ./src/index.js &
+curl -ki -H "Host: kyledrake.neocities.org" https://127.0.0.1
+```
 
 ## TODO:
 
